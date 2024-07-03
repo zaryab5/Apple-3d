@@ -1,7 +1,7 @@
 import hero from "/assets/images/hero.jpeg";
-
+import { lazy } from "react";
 export const heroImg = hero;
-
+// const hmv = lazy(()=>import("/assets/videos/hero.mp4"));
 import hmv from "/assets/videos/hero.mp4";
 import smallmv from "/assets/videos/smallHero.mp4";
 import highlightFirstmv from "/assets/videos/highlight-first.mp4";
@@ -28,6 +28,7 @@ import explore1 from "/assets/images/explore1.jpg";
 import explore2 from "/assets/images/explore2.jpg";
 import chip from "/assets/images/chip.jpeg";
 import frame from "/assets/images/frame.png";
+
 
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
