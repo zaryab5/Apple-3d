@@ -4,7 +4,7 @@ import { Suspense } from "react"
 import Iphone from "./Iphone"
 import * as THREE from 'three'
 import Loading from "./Loading"
-const ModelView = ({index,groupRef,gsapType,controlRef,setRotationSize,size,item}) => {
+const ModelView = ({index,groupRef,gsapType,controlRef,setRotationState,size,item}) => {
   return (
     <View
      index={index}
@@ -21,7 +21,7 @@ const ModelView = ({index,groupRef,gsapType,controlRef,setRotationSize,size,item
       enablePan={false}
       rotateSpeed={0.4}
       target0={new THREE.Vector3([0,0,0])}
-      onEnd={()=> setRotationState(controlRef.current.getAzimuthalAngle())}
+      onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
       />
       <group ref={groupRef} name={`${index === 1 ? 'small' : 'large'} `} position={[0,0,0]}>
         
