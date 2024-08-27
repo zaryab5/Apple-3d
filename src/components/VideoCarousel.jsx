@@ -135,7 +135,7 @@ const VideoCarousel = () => {
             <div key={list.id} id="slider" className=" sm:pr-20 pr-10">
                 <div className="video-carousel_container">
                     <div className=" w-full h-full flex-center rounded-3xl overflow-hidden bg-black">
-                        <video id="video" playsInline={true} preload="auto" muted ref={(elm)=>videoRef.current[i]=elm} onPlay={()=>{
+                        <video id="video" playsInline preload="auto" muted ref={(elm)=>videoRef.current[i]=elm} onPlay={()=>{
                             setVideo((prev)=>({...prev,isPlaying:true}))
                         }}
                         onEnded={()=>
